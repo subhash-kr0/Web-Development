@@ -1,0 +1,78 @@
+<!-- Definition
+HTML <marquee> tag use to create a scrolling text or scrolling image from left to right, right to left, top to bottom, bottom to top. There is no limit. It's user define choice.
+
+<marquee> tag is a container tag to create scrolling text.
+
+<marquee> tag support following some attributes. This attributes use to add more special effect and easy control.
+
+Attributes	       Values	          Description
+
+behavior	      "slide"             Start completely and stop as soon as text touches the margin. 
+                  "scroll"            Start completely and off one side. 
+                  "alternate"         Text bounce as soon as touch both side margin.
+                   
+                  	      
+bgcolor	          "color code"       Specifies the background color.
+
+direction	       "left"            Left to Right 
+                   "right"            Right to Left 
+                   "up"               Bottom to Top 
+                   "down"	          Top to Bottom                             
+
+
+
+width	            "size"	          Specifies width in marquee.
+height	            "size"	          Specifies height in marquee.
+loop	              "2"            Loop Continues in limited times.
+"infinite"	                         Loop Continues in Infinite.
+
+scrollamount        "3"          	Specifies Speed to scroll on the text.
+scrolldelay	        "3"	              Specifies time wait long before each marquee.
+hspace	            "size"	           Specifies left or right margin for outside marquee.
+vspace	            "size"	           Specifies top or bottom margin for outside marquee. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="alternate" direction="left">Side Touch Margin Bounce Text</marquee>
+
+    <marquee behavior="scroll" direction="right">Right to Left Scroll Text</marquee>
+
+    <marquee behavior="scroll" direction="up">Bottom to Top Scroll Text</marquee>
+
+    <marquee behavior="scroll" direction="down">Top to Bottom Scroll Text</marquee>
+
+    <marquee behavior="slide" direction="left">Left to Right Slide Text</marquee>
+
+    <marquee behavior="slide" direction="right">Right to Left Slide Text</marquee>
+
+    <marquee behavior="slide" direction="up">Bottom to Top Slide Text</marquee>
+
+    <marquee behavior="slide" direction="down">Top to Bottom Slide Text</marquee>
+
+    <marquee behavior="alternate" direction="left" bgcolor="yellow">Side Touch Margin Bounce Text</marquee>
+
+    <marquee behavior="scroll" direction="right" bgcolor="yellow">Right to Left Scroll Text</marquee>
+
+    <marquee behavior="scroll" direction="up" bgcolor="yellow">Bottom to Top Scroll Text</marquee>
+
+    <marquee behavior="scroll" direction="down" bgcolor="yellow">Top to Bottom Scroll Text</marquee>
+
+
+    <!-- for img -->
+    <marquee behavior="alternate" direction="left">
+        <img src="../images/img_nat.png" width="120" height="80" alt="Natural" />
+      </marquee>
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        <img src="../images/img_nat.png" width="120" height="80" alt="Natural" />
+      </marquee>
+      <marquee behavior="scroll" direction="left" scrollamount="15">
+        <img src="../images/img_nat.png" width="120" height="80" alt="Natural" />
+      </marquee>
+</body>
+</html>

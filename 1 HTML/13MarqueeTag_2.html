@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Click and Hold to Stop Marquee -->
+
+  <marquee behavior="scroll" direction="left"
+  onmousedown="this.stop();"
+  onmouseup="this.start();">Click and hold the mouse marquee stop</marquee>
+
+  <!-- Hover to Stop Marquee -->
+  <marquee behavior="scroll" direction="left"
+           onmouseover="this.stop();"
+           onmouseout="this.start();">Hower over and hold the mouse marquee stop</marquee>
+
+
+           <!-- Marquee Start/Stop Buttons -->
+           <marquee behavior="scroll" direction="left" id="marquee1"><p>Press Button</p></marquee>
+  <input type="button" value="Stop Marquee" onClick="document.getElementById('marquee1').stop();"/>
+  <input type="button" value="Start Marquee" onClick="document.getElementById('marquee1').start();"/>
+
+
+  <!-- Click to slow Marquee speed -->
+  <marquee behavior="scroll" direction="left"
+           onmousedown="this.setAttribute('scrollamount', 3, 0);"
+           onmouseup="this.setAttribute('scrollamount', 10, 0);">Click and hold the mouse marquee speed slow</marquee>
+
+           <!-- Hover over to slow Marquee speed -->
+           <marquee behavior="scroll" direction="left"
+           onmouseover="this.setAttribute('scrollamount', 3, 0);"
+           onmouseout="this.setAttribute('scrollamount', 10, 0);">Hover over to slow Marquee Speed</marquee>
+
+           <!-- Marquee speed slow/fast using buttons -->
+           <marquee behavior="scroll" direction="left" scrollamount="6" id="marquee5">Marquee slow/medium/fast speed using buttons</marquee>
+  <input type="button" value="Slower" onClick="document.getElementById('marquee5').setAttribute('scrollamount', 1, 0);" />
+  <input type="button" value="Medium" onClick="document.getElementById('marquee5').setAttribute('scrollamount', 5, 0);" />
+  <input type="button" value="Faster" onClick="document.getElementById('marquee5').setAttribute('scrollamount', 10, 0);" />
+
+
+    <!-- Multiple Start/Stop Marquee -->
+    <marquee behavior="scroll" direction="left" scrollamount="10" id="marquee2"><p>Marquee 1</p></marquee>
+  <marquee behavior="scroll" direction="left" scrollamount="15" id="marquee3"><p>Marquee 2</p></marquee>
+  <input type="button" value="Stop Marquee 1" onClick="document.getElementById('marquee2').stop();"/>
+  <input type="button" value="Start Marquee 1" onClick="document.getElementById('marquee2').start();"/><br />
+  <input type="button" value="Stop Marquee 2" onClick="document.getElementById('marquee3').stop();"/>
+  <input type="button" value="Start Marquee 2" onClick="document.getElementById('marquee3').start();"/>
+
+</body>
+</html>
