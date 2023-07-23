@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="form_submit.php" method="post">
+        Your Feedback:
+        <textarea cols="65" rows="4" name="Feedback" >
+        I realy like your Web Service because....
+        </textarea/>
+        <input type="submit" value="Submit" name="Submit" />
+
+        First name:
+        <input type="text" name="FirstName:" size="10" maxlength="15" />
+        <br />
+        Last name:
+        <input type="text" name="LastName:" size="10" maxlength="15" />
+
+
+    Password:
+    <input type="password" name="Password" size="15" maxlength="15"/>
+
+
+    Que. What is your favourites Web browser.
+    <input type="radio" name="browser" value="IE8" /> Internet Explorer 8 <br />
+    <input type="radio" name="browser" value="GC" /> Google Crome <br />
+    <input type="radio" name="browser" value="FX"  /> Mozila Firefox <br />
+
+
+    Que. Select your hobby.
+      <input type="checkbox" name="cricket" value="cricket" /> Cricket <br />
+      <input type="checkbox" name="watchtv" value="watchtv" /> Watch Tv <br />
+      <input type="checkbox" name="playgame" value="playgame" /> Play Game <br />
+      <input type="checkbox" name="inserf" value="inserf" /> Internet Surfing <br />
+
+
+    Name:
+    <input type="text" name="name" size="15" maxlength="15" />
+    <br />
+    <input type="submit" value="submit" name="Submit" />
+    <input type="reset" value="reset" name="Reset" />
+
+    <br />
+    Your Feedback: <br />
+    <textarea cols="65" rows="4" name="Feedback" >
+      I realy like your Web Service because....
+    </textarea>
+
+    Select Your Hobby: <br />
+    <select name="hobby" >
+      <option value="cricket">Cricket</option>
+      <option value="WatchTV">Watch Tv</option>
+      <option value="PlayGame">Play Game</option>
+      <option value="Reading">Reading</option>
+      <option value="Int">Internet Surfing</option>
+
+    </select>
+
+    
+      </form>
+</body>
+</html>
