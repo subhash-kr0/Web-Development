@@ -1,0 +1,312 @@
+<!-- tables in html -->
+<!-- developer.mozilla.org -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        } 
+    </style>
+</head>
+<body>
+    <!-- <table border="1">    border attributes depricated -->
+        <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Smith</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <!-- thead, tbody -->
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- colspan, tfoot-->
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- table caption -->
+    <table>
+        <caption>Table Caption</caption>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- table scope -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- table summary -->
+    <table summary="This table shows how to create tables using HTML">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- table width -->
+    <table width="100%">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- rowspan -->
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- rowgroup, colgroup -->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:yellow">
+            <col style="background-color:lightblue">
+        </colgroup>
+        
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">John</td>
+                <td>Doe</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>45</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
